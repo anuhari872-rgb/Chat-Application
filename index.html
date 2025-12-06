@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <section class="join">
+      <h2>Join chat</h2>
+      <input id="name" placeholder="Your name" />
+      <input id="room" placeholder="Room (e.g. general, math, dev)" />
+      <button id="joinBtn">Join</button>
+    </section>
+
+    <section class="chat hidden">
+      <header class="chat-header">
+        <div>
+          <h3 id="roomTitle">Room: general</h3>
+          <small id="userInfo"></small>
+        </div>
+        <div class="room-switch">
+          <input id="switchRoomInput" placeholder="Switch room..." />
+          <button id="switchRoomBtn">Go</button>
+        </div>
+      </header>
+
+      <main id="messages"></main>
+
+      <footer class="chat-input">
+        <div class="input-row">
+          <input id="messageInput" placeholder="Type a message..." />
+          <button id="sendBtn">Send</button>
+        </div>
+        <div class="typing" id="typingIndicator"></div>
+        <div class="pm-row">
+          <input id="pmTo" placeholder="PM to username..." />
+          <input id="pmText" placeholder="Private message..." />
+          <button id="pmSend">Send PM</button>
+        </div>
+      </footer>
+
+      <aside class="sidebar">
+        <h4>Online</h4>
+        <ul id="onlineList"></ul>
+      </aside>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
